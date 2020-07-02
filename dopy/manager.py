@@ -445,7 +445,7 @@ class DoManager(object):
 
     def show_action(self, action_id):
         if self.api_version == 2:
-            json = self.request('/actions/%s' % event_id)
+            json = self.request('/actions/%s' % action_id)
             return json['action']
         return show_event(self, action_id)
 
